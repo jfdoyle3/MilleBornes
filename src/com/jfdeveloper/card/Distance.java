@@ -2,24 +2,13 @@ package com.jfdeveloper.card;
 
 public class Distance extends Card{
 
-//    enum DistanceCard{TWENTYFIVE("25m"),FIFTY("50m");
-//
-//        String cardValue;
-//
-//        DistanceCard(String cardValue) {
-//            this.cardValue=cardValue;
-//        }
-//
-//        public String getDistanceCard(){
-//            return this.cardValue;
-//        }
-//    }
+    private final int distance;
 
-    private int distance;
 
     public Distance(Boolean faceUpDown, String cardFace, int cardId, int distance) {
         super(faceUpDown, cardFace, cardId);
         this.distance = distance;
+        this.cardId=cardId;
     }
 
     public int getDistance() {
@@ -27,10 +16,10 @@ public class Distance extends Card{
     }
 
 
+    @Override
     public String toString() {
-        return "Distance { " +
-                "distance:" + distance +
-
-                '}';
+        return "Distance{ cardId: " + cardId +
+                ", distance: " + distance +
+                " }";
     }
 }

@@ -11,28 +11,32 @@ public class Main {
     public static void main(String[] args) {
 
         List<Card> deck=new ArrayList<>();
-        System.out.println("reveal a card");
 
+        int[] ids={1,2,3,4,5};
+        int[] dist={25,50,75,100,200};
+        String[] face={"25m","50m","75m","100m","200m"};
+        int[] cardCount={10,10,10,12,4};
+
+        //Couple of Cards
         Card twentyFiveMiles=new Distance(true,"25m",101,25);
         Card fiftyMiles=new Distance(false,"50m",102,50);
 
-//        for (int card=0; card<3; card++){
-//            deck.add(twentyFiveMiles);
-//            deck.add(fiftyMiles);
-//        }
-        System.out.println(twentyFiveMiles.toString());
-        System.out.println(twentyFiveMiles.getCardFace());
-        System.out.println(((Distance) twentyFiveMiles).getDistance());
+        // Make a small deck
+        // try a while loopto make a distance deck.
+       // makeDeck(deck, twentyFiveMiles, fiftyMiles);
 
-//        System.out.println(deck);
-//
-//        for(Card card : deck){
-//            card.flip();
-//            System.out.println(card.getCardFace());
-//        }
+        // Output deck
+        System.out.println(deck);
+
+
+    }
 
 
 
-
+    private static void makeDeck(List<Card> deck, Card card1, Card card2) {
+        for (int card=0; card<3; card++){
+            deck.add(card1);
+            deck.add(card2);
+        }
     }
 }

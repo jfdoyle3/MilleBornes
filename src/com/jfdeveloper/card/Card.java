@@ -2,9 +2,10 @@ package com.jfdeveloper.card;
 
 public class Card {
 
+    protected int cardId;
     private boolean faceUpDown;
     private String cardFace;
-    private int cardId;
+
 
     public Card(Boolean faceUpDown, String cardFace, int cardId) {
         this.faceUpDown = faceUpDown;
