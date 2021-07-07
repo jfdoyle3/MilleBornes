@@ -20,9 +20,12 @@ public class Main {
         //Couple of Cards
         Card twentyFiveMiles=new Distance(true,"25m",101,25);
         Card fiftyMiles=new Distance(false,"50m",102,50);
+        
 
         // Make a small deck
         // try a while loopto make a distance deck.
+
+
        // makeDeck(deck, twentyFiveMiles, fiftyMiles);
 
         // Output deck
