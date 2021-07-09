@@ -11,7 +11,7 @@ public class DistanceDeck {
     private List<Card> distanceDeck=new ArrayList<>();
 
 
-    public  void buildDeck() {
+    public  void buildDistanceDeck() {
         for (int crd = 0; crd < 10; crd++) {
             distanceDeck.add(new Distance(true, "25m", 25));
             distanceDeck.add(new Distance(true, "50m", 50));

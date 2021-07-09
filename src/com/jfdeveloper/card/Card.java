@@ -2,7 +2,6 @@ package com.jfdeveloper.card;
 
 public abstract class Card {
 
-
     protected boolean faceUpDown;
     protected String cardFace;
 
@@ -10,7 +9,6 @@ public abstract class Card {
     public Card(Boolean faceUpDown, String cardFace) {
         this.faceUpDown = faceUpDown;
         this.cardFace = cardFace;
-
     }
 
     public void flip() {
@@ -24,9 +22,8 @@ public abstract class Card {
     }
 
 
-
     @Override
     public String toString() {
-        return "Card{ faceUpDown: " + faceUpDown + ", cardFace: '" + cardFace +" }";
+        return "Card{ faceUpDown: " + faceUpDown + ", cardFace: '" + cardFace + " }";
     }
 }
