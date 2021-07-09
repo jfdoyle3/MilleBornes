@@ -1,6 +1,6 @@
 package com.jfdeveloper.card;
 
-public class Distance extends Card{
+public class Distance extends Card {
 
     private final int distance;
 
@@ -8,7 +8,7 @@ public class Distance extends Card{
     public Distance(Boolean faceUpDown, String cardFace, int cardId, int distance) {
         super(faceUpDown, cardFace, cardId);
         this.distance = distance;
-        this.cardId=cardId;
+        this.cardId = cardId;
     }
 
     public int getDistance() {

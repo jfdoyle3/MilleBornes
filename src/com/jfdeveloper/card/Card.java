@@ -1,6 +1,6 @@
 package com.jfdeveloper.card;
 
-public class Card {
+public abstract class Card {
 
     protected int cardId;
     private boolean faceUpDown;
@@ -18,7 +18,7 @@ public class Card {
     }
 
     public String getCardFace() {
-        if(this.faceUpDown)
+        if (this.faceUpDown)
             return this.cardFace;
         return "[#]";
     }
@@ -29,6 +29,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{ faceUpDown: " + faceUpDown +", cardFace: '" + cardFace + "', cardId: " + cardId +" }";
+        return "Card{ faceUpDown: " + faceUpDown + ", cardFace: '" + cardFace + "', cardId: " + cardId + " }";
     }
 }
