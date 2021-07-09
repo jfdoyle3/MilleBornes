@@ -2,15 +2,15 @@ package com.jfdeveloper.card;
 
 public abstract class Card {
 
-    protected int cardId;
-    private boolean faceUpDown;
-    private String cardFace;
+
+    protected boolean faceUpDown;
+    protected String cardFace;
 
 
-    public Card(Boolean faceUpDown, String cardFace, int cardId) {
+    public Card(Boolean faceUpDown, String cardFace) {
         this.faceUpDown = faceUpDown;
         this.cardFace = cardFace;
-        this.cardId = cardId;
+
     }
 
     public void flip() {
@@ -23,12 +23,10 @@ public abstract class Card {
         return "[#]";
     }
 
-    public int getCardId() {
-        return cardId;
-    }
+
 
     @Override
     public String toString() {
-        return "Card{ faceUpDown: " + faceUpDown + ", cardFace: '" + cardFace + "', cardId: " + cardId + " }";
+        return "Card{ faceUpDown: " + faceUpDown + ", cardFace: '" + cardFace +" }";
     }
 }

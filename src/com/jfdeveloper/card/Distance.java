@@ -5,10 +5,10 @@ public class Distance extends Card {
     private final int distance;
 
 
-    public Distance(Boolean faceUpDown, String cardFace, int cardId, int distance) {
-        super(faceUpDown, cardFace, cardId);
+    public Distance(boolean faceUpDown, String cardFace, int distance) {
+        super(faceUpDown, cardFace);
         this.distance = distance;
-        this.cardId = cardId;
+
     }
 
     public int getDistance() {
@@ -18,7 +18,7 @@ public class Distance extends Card {
 
     @Override
     public String toString() {
-        return "Distance{ cardId: " + cardId +
+        return "Distance{ " +
                 ", distance: " + distance +
                 " }";
     }
