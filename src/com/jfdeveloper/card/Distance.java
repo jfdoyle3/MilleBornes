@@ -18,8 +18,9 @@ public class Distance extends Card {
 
     @Override
     public String toString() {
-        return "Distance{ " +
-                ", distance: " + distance +
-                " }";
+        return "Distance{" +
+                "cardFace='" + cardFace + '\'' +
+                ", distance=" + distance +
+                '}';
     }
 }

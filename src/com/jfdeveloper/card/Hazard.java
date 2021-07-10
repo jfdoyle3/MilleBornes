@@ -13,17 +13,22 @@ public class Hazard extends Card {
 
     private boolean inEffect=false;
 
-
     public Hazard(boolean faceUpDown, String cardFace) {
         super(faceUpDown, cardFace);
     }
 
+    // getter / setter
     public boolean isInEffect() {
         return inEffect;
     }
 
     public void setInEffect(boolean inEffect) {
         this.inEffect = inEffect;
+    }
+
+    public String stop(){
+        return "STOP";
+
     }
 
     @Override
