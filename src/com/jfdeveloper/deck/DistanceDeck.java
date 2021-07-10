@@ -6,28 +6,34 @@ import com.jfdeveloper.card.Distance;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DistanceDeck {
+public class DistanceDeck extends Deck {
 
-    private List<Card> distanceDeck=new ArrayList<>();
+    public static List<Card> distanceDeck=new ArrayList<>();
+
+    public DistanceDeck(Card card) {
+        super(card);
+    }
 
 
-    public  void buildDistanceDeck() {
+    public static List<Card> buildDistanceDeck(Boolean cardPosition) {
         for (int crd = 0; crd < 10; crd++) {
-            distanceDeck.add(new Distance(true, "25m", 25));
-            distanceDeck.add(new Distance(true, "50m", 50));
-            distanceDeck.add(new Distance(true, "75m", 75));
+            distanceDeck.add(new Distance(cardPosition, "25m", 25));
+            distanceDeck.add(new Distance(cardPosition, "50m", 50));
+            distanceDeck.add(new Distance(cardPosition, "75m", 75));
         }
         for (int crd = 0; crd < 12; crd++)
-            distanceDeck.add(new Distance(true, "100m", 100));
+            distanceDeck.add(new Distance(cardPosition, "100m", 100));
 
         for (int crd = 0; crd < 4; crd++)
-            distanceDeck.add(new Distance(true, "200m", 200));
+            distanceDeck.add(new Distance(cardPosition, "200m", 200));
+
+        return distanceDeck;
 
     }
 
 
 
-    public void displayDeck() {
+    public static void displayDeck() {
         for (Card card : distanceDeck)
             System.out.printf("card: %s | ", card.getCardFace());
     }

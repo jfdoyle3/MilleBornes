@@ -6,9 +6,10 @@ public abstract class Card {
     protected String cardFace;
 
 
-    public Card(Boolean faceUpDown, String cardFace) {
+    public Card(boolean faceUpDown, String cardFace) {
         this.faceUpDown = faceUpDown;
         this.cardFace = cardFace;
+
     }
 
     public void flip() {
