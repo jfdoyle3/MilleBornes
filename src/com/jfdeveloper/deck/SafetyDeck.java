@@ -19,11 +19,11 @@ public class SafetyDeck extends Deck {
     }
 
     public static List<Card> buildSafetyDeck(boolean faceUpDown){
-        safetyDeck.add(new Safety(faceUpDown,"EMERGENCY VEHICLE"));
-        safetyDeck.add(new Safety(faceUpDown,"EXTRA TANK"));
-        safetyDeck.add(new Safety(faceUpDown,"PUNCTURE PROOF"));
-        safetyDeck.add(new Safety(faceUpDown,"DRIVING ACE"));
-        safetyDeck.add(new Safety(faceUpDown,"RIGHT OF WAY"));
+        safetyDeck.add(new Safety(faceUpDown,"[EMERGENCY VEHICLE]"));
+        safetyDeck.add(new Safety(faceUpDown,"[EXTRA TANK]"));
+        safetyDeck.add(new Safety(faceUpDown,"[PUNCTURE PROOF]"));
+        safetyDeck.add(new Safety(faceUpDown,"[DRIVING ACE]"));
+        safetyDeck.add(new Safety(faceUpDown,"[RIGHT OF WAY]"));
 
         return safetyDeck;
     }

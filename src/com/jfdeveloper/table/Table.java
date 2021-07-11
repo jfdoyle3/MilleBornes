@@ -4,10 +4,14 @@ import com.jfdeveloper.card.Card;
 import com.jfdeveloper.card.Distance;
 import com.jfdeveloper.card.DistanceCard;
 import com.jfdeveloper.deck.Deck;
+import com.jfdeveloper.ui.Console;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.ConcurrentModificationException;
 import java.util.List;
+
+import static com.jfdeveloper.ui.Console.displayCards;
 
 public class Table {
 
@@ -28,22 +32,14 @@ public class Table {
         for(int crd=0; crd<6; crd++)
             hand.add(deck.get(crd));
 
-        Table.displayCards(hand);
-        int dist=0;
-        for(Card card : hand){
-            if (card instanceof Distance)
-                dist+= ((Distance) card).getDistance();
-        }
-
-        System.out.println("total: "+dist);
+        Console.displayCards(hand);
 
 
     }
 
-    public static void displayCards(List<Card> cards){
-        for (Card card : cards)
-            System.out.println(card);
-    }
+
+
+
 
 
 }

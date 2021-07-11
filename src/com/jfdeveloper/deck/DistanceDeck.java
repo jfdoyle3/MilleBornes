@@ -15,17 +15,18 @@ public class DistanceDeck extends Deck {
     }
 
 
-    public static List<Card> buildDistanceDeck(Boolean cardPosition) {
+    public static List<Card> buildDistanceDeck(Boolean faceUpDown) {
+
         for (int crd = 0; crd < 10; crd++) {
-            distanceDeck.add(new Distance(cardPosition, "25m", 25));
-            distanceDeck.add(new Distance(cardPosition, "50m", 50));
-            distanceDeck.add(new Distance(cardPosition, "75m", 75));
+            distanceDeck.add(new Distance(faceUpDown, "[25m]", 25));
+            distanceDeck.add(new Distance(faceUpDown, "[50m]", 50));
+            distanceDeck.add(new Distance(faceUpDown, "[75m]", 75));
         }
         for (int crd = 0; crd < 12; crd++)
-            distanceDeck.add(new Distance(cardPosition, "100m", 100));
+            distanceDeck.add(new Distance(faceUpDown, "[100m]", 100));
 
         for (int crd = 0; crd < 4; crd++)
-            distanceDeck.add(new Distance(cardPosition, "200m", 200));
+            distanceDeck.add(new Distance(faceUpDown, "[200m]", 200));
 
         return distanceDeck;
 
