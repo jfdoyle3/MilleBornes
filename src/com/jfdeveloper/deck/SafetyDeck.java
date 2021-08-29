@@ -18,12 +18,12 @@ public class SafetyDeck extends Deck {
         super(card);
     }
 
-    public static List<Card> buildSafetyDeck(boolean faceUpDown){
-        safetyDeck.add(new Safety(faceUpDown,"[EMERGENCY VEHICLE]"));
-        safetyDeck.add(new Safety(faceUpDown,"[EXTRA TANK]"));
-        safetyDeck.add(new Safety(faceUpDown,"[PUNCTURE PROOF]"));
-        safetyDeck.add(new Safety(faceUpDown,"[DRIVING ACE]"));
-        safetyDeck.add(new Safety(faceUpDown,"[RIGHT OF WAY]"));
+    public static List<Card> buildSafetyDeck(){
+        safetyDeck.add(new Safety("[EMERGENCY VEHICLE]"));
+        safetyDeck.add(new Safety("[EXTRA TANK]"));
+        safetyDeck.add(new Safety("[PUNCTURE PROOF]"));
+        safetyDeck.add(new Safety("[DRIVING ACE]"));
+        safetyDeck.add(new Safety("[RIGHT OF WAY]"));
 
         return safetyDeck;
     }

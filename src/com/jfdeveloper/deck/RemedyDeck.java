@@ -23,15 +23,15 @@ public class RemedyDeck extends Deck {
         super(card);
     }
 
-    public static List<Card> buildRemedyDeck(boolean faceUpDown) {
+    public static List<Card> buildRemedyDeck() {
         for (int crd = 0; crd < 6; crd++) {
-            remedyDeck.add(new Remedy(faceUpDown, "[GASOLINE]"));
-            remedyDeck.add(new Remedy(faceUpDown, "[SPARE TIRE]"));
-            remedyDeck.add(new Remedy(faceUpDown, "[REPAIRS]"));
-            remedyDeck.add(new Remedy(faceUpDown, "[END OF SPEED LIMIT]"));
+            remedyDeck.add(new Remedy( "[GASOLINE]"));
+            remedyDeck.add(new Remedy( "[SPARE TIRE]"));
+            remedyDeck.add(new Remedy( "[REPAIRS]"));
+            remedyDeck.add(new Remedy( "[END OF SPEED LIMIT]"));
         }
         for(int crd=0; crd<14; crd++)
-            remedyDeck.add(new Remedy(faceUpDown, "[ROLL]"));
+            remedyDeck.add(new Remedy( "[ROLL]"));
 
         return remedyDeck;
     }

@@ -5,8 +5,8 @@ public class Distance extends Card {
     private final int distance;
 
 
-    public Distance(boolean faceUpDown, String cardFace, int distance) {
-        super(faceUpDown, cardFace);
+    public Distance(String cardFace, int distance) {
+        super(cardFace);
         this.distance = distance;
 
     }

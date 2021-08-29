@@ -13,8 +13,8 @@ public class Hazard extends Card {
 
     private boolean inEffect=false;
 
-    public Hazard(boolean faceUpDown, String cardFace) {
-        super(faceUpDown, cardFace);
+    public Hazard(String cardFace) {
+        super(cardFace);
     }
 
     // getter / setter

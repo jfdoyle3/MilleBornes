@@ -6,8 +6,8 @@ public abstract class Card {
     protected String cardFace;
 
 
-    public Card(boolean faceUpDown, String cardFace) {
-        this.faceUpDown = faceUpDown;
+    public Card(String cardFace) {
+        this.faceUpDown = false;
         this.cardFace = cardFace;
 
     }

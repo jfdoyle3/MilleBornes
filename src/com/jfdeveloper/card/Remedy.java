@@ -9,8 +9,8 @@ package com.jfdeveloper.card;
 // TODO: try to tie in the hazard cards when played to flip from true to false
 
 public class Remedy extends Card {
-    public Remedy(boolean faceUpDown, String cardFace) {
-        super(faceUpDown, cardFace);
+    public Remedy(String cardFace) {
+        super(cardFace);
     }
 
 

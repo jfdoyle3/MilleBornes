@@ -16,10 +16,10 @@ public class Deck implements iDeck {
 
     public static List<Card> buildDeck(){
 
-        List<Card> distDeck = DistanceDeck.buildDistanceDeck(true);
-        List<Card> hazDeck = HazardDeck.buildHazardDeck(true);
-        List<Card> remDeck = RemedyDeck.buildRemedyDeck(true);
-        List<Card> safeDeck = SafetyDeck.buildSafetyDeck(true);
+        List<Card> distDeck = DistanceDeck.buildDistanceDeck();
+        List<Card> hazDeck = HazardDeck.buildHazardDeck();
+        List<Card> remDeck = RemedyDeck.buildRemedyDeck();
+        List<Card> safeDeck = SafetyDeck.buildSafetyDeck();
 
         for (Card card : distDeck)
             deck.add(card);

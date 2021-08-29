@@ -27,20 +27,20 @@ public class HazardDeck extends Deck {
         super(card);
     }
 
-    public static List<Card> buildHazardDeck(Boolean faceUpDown) {
+    public static List<Card> buildHazardDeck() {
 
         for(int crd=0; crd<3; crd++){
-            hazardDeck.add(new Hazard(faceUpDown,"[STOP]"));
-            hazardDeck.add(new Hazard(faceUpDown,"[FLAT TIRE]"));
-            hazardDeck.add(new Hazard(faceUpDown,"[ACCIDENT]"));
+            hazardDeck.add(new Hazard("[STOP]"));
+            hazardDeck.add(new Hazard("[FLAT TIRE]"));
+            hazardDeck.add(new Hazard("[ACCIDENT]"));
         }
 
         for(int crd=0; crd<4; crd++){
-            hazardDeck.add(new Hazard(faceUpDown,"[SPEED LIMIT]"));
-            hazardDeck.add(new Hazard(faceUpDown,"[RED LIGHT]"));
+            hazardDeck.add(new Hazard("[SPEED LIMIT]"));
+            hazardDeck.add(new Hazard("[RED LIGHT]"));
         }
 
-        hazardDeck.add(new Hazard(false,"RED LIGHT"));
+        hazardDeck.add(new Hazard("[RED LIGHT]"));
 
         return hazardDeck;
     }

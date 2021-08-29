@@ -9,8 +9,8 @@ package com.jfdeveloper.card;
 public class Safety extends Card{
 
 
-    public Safety(boolean faceUpDown, String cardFace) {
-        super(faceUpDown, cardFace);
+    public Safety(String cardFace) {
+        super(cardFace);
     }
 
 
